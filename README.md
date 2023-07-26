@@ -1,2 +1,6 @@
-# morseCodeTest
-Morse Code Tester
+#Morse Code Tester
+
+In progress ~ 
+
+Function: Asks Morse code questions to answer
+
