@@ -1,0 +1,48 @@
+<!-- 
+  Project: Morse Code Tester
+  Purpose: Inspired by my partner who suggested learning morse code for "secret" communication, I thought
+  that it would be helpful to make a testing website that gives questions based off
+  morse code that also has audio.
+
+  Notes of what I have learned while doing this project:
+  
+  1. HTML: You can initialize a div with an id and class name with
+  #idName.classname then tabbing. If you do it without a #, you set only class name
+  you can also specify the element type for example do p.text or h1#bye
+
+  2. CSS: The body of a page is also referred to as :root
+
+  3. CSS: The * symbol selects all elements
+
+  4. CSS: There is a property called disabled
+
+  5. CSS: There is a property of cursor called not allowed where cursor can't press it
+  
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Morse Code Tester</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+  <div class="container">
+    <div id="home" class="flex-column flex-center">
+      <h1>Morse Code Tester</h1>
+      <a href="./morseModes/selectMorseDifficulty.html" class="btn">Play Morse</a>
+      <a href="./highscores/highscores.html" id="highscore-btn" class="btn">High Scores
+        <i class="fas fa-crown"></i>
+      </a>
+    </div>
+  </div>
+
+  
+
+</body>
+</html>
