@@ -6,6 +6,17 @@
   background-color: rgb(29, 26, 26);
 }
 
+
+@media (max-width: 780px) {
+  h1 {
+    font-size: 4rem;
+  }
+  .btn {
+    width: 18rem;
+  }
+}
+
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -241,4 +252,7 @@ input::placeholder {
   box-shadow: none;
   transform: none;
 }
+
+
+
 
