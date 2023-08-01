@@ -9,10 +9,11 @@ const progressBarFull = document.querySelector('#progressBarFull');
 
 
 
-let availableMorseList = ['o -','- o o o','- o - o','- o o','o','o o - o','- - o','o o o o','o o','o - - -','- o -','o - o o','- -'];
-let matchLettersList = ['A','B','C','D','E','F','G','H','I','J','K','L','M'];
-let poolLettersList = ['A','B','C','D','E','F','G','H','I','J','K','L','M'];
 
+
+let availableLettersList = ['A','B','C','D','E','F','G','H','I','J','K','L','M']
+let matchMorseList = ['o -','- o o o','- o - o','- o o','o','o o - o','- - o','o o o o','o o','o - - -','- o -','o - o o','- -']
+let poolMorseList = ['o -','- o o o','- o - o','- o o','o','o o - o','- - o','o o o o','o o','o - - -','- o -','o - o o','- -']
 
 
 
@@ -34,8 +35,8 @@ generateQuestions = () => {
   shuffleArray(choiceList)
   setChoices()
   pushQuestion()
-  availableMorseList.splice(questionIndex, 1)
-  matchLettersList.splice(questionIndex, 1)
+  availableLettersList.splice(questionIndex, 1)
+  matchMorseList.splice(questionIndex, 1)
     
     
   
@@ -44,9 +45,9 @@ generateQuestions = () => {
 generateChoices = () => {
   choiceList = []
     choiceListFilled = false;
-    questionIndex = Math.floor(Math.random() * availableMorseList.length)
-    askQuestion = `What is the letter for ${availableMorseList[questionIndex]} ?`
-    askAnswer = matchLettersList[questionIndex]
+    questionIndex = Math.floor(Math.random() * availableLettersList.length)
+    askQuestion = `What is the Morse Code for ${availableLettersList[questionIndex]} ?`
+    askAnswer = matchMorseList[questionIndex]
     choiceList.push(askAnswer)
 
     while(!choiceListFilled) {
@@ -55,8 +56,8 @@ generateChoices = () => {
       }
 
       else {
-        letterIndex = Math.floor(Math.random() * poolLettersList.length)
-        choiceAdded = poolLettersList[letterIndex]
+        letterIndex = Math.floor(Math.random() * poolMorseList.length)
+        choiceAdded = poolMorseList[letterIndex]
         if(!(choiceList.includes(choiceAdded))) {
           choiceList.push(choiceAdded)
         }
