@@ -7,8 +7,6 @@
 }
 
 
-
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -92,11 +90,11 @@ h2 {
   transform: none;
 }
 
-.morseBtn {
+.morseBtn, .homeBtn {
   background: linear-gradient(90deg, rgb(18, 92, 255) 0%, rgb(0, 102, 255) 100%);
 }
 
-.morseBtn:hover {
+.morseBtn:hover, .homeBtn {
   box-shadow: 0 0.4rem 1.4rem 0 rgba(8, 114, 244, 0.6);
 }
 
@@ -135,6 +133,8 @@ h2 {
 .soundBtn:hover {
   box-shadow: 0 0.4rem 1.4rem 0 rgba(244, 8, 8, 0.6);
 }
+
+
 
 
 
@@ -245,6 +245,7 @@ input::placeholder {
   transform: none;
 }
 
+
 @media (max-width: 780px) {
   h1 {
     font-size: 4rem;
@@ -253,6 +254,3 @@ input::placeholder {
     width: 18rem;
   }
 }
-
-
-
